@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 48655930}
   - component: {fileID: 48655931}
-  - component: {fileID: 48655933}
+  - component: {fileID: 48655932}
   m_Layer: 0
   m_Name: Mole 3
   m_TagString: Untagged
@@ -208,7 +208,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &48655933
+--- !u!114 &48655932
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -217,22 +217,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 48655929}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b41ce0477cab9cb4ba4e7a0aa7cbc45e, type: 3}
+  m_Script: {fileID: 11500000, guid: 0211dd95ec91187419f0bc9c23bf7336, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   timeUntilActivationConst: 0
-  damaged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_CallsDirty: 1
-  timeUntilDeactivationConst: 0
-  timeUntilActivation: 0
-  timeUntilDeactivation: 0
-  animator: {fileID: 0}
   isActive: 0
-  isFirstActive: 0
-  isDamaged: 0
-  canDamaged: 0
 --- !u!1 &91635493
 GameObject:
   m_ObjectHideFlags: 0
@@ -365,6 +354,7 @@ GameObject:
   m_Component:
   - component: {fileID: 205750710}
   - component: {fileID: 205750709}
+  - component: {fileID: 205750711}
   m_Layer: 0
   m_Name: Hole 8
   m_TagString: Untagged
@@ -439,6 +429,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &205750711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205750708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1bf0a423f9e824893bbec23fc68e0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 0}
 --- !u!1 &394344817
 GameObject:
   m_ObjectHideFlags: 0
@@ -891,6 +894,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -972,6 +976,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49455d14404cd1449b003c69a1e1fb1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  holes:
+  - {fileID: 992008951}
+  - {fileID: 1840539297}
+  - {fileID: 1017099429}
+  - {fileID: 1052865004}
+  - {fileID: 782175154}
+  - {fileID: 1141026563}
+  - {fileID: 1172891296}
+  - {fileID: 205750711}
+  - {fileID: 698907639}
 --- !u!1 &638749000
 GameObject:
   m_ObjectHideFlags: 0
@@ -1050,6 +1076,7 @@ GameObject:
   m_Component:
   - component: {fileID: 698907638}
   - component: {fileID: 698907637}
+  - component: {fileID: 698907639}
   m_Layer: 0
   m_Name: Hole 9
   m_TagString: Untagged
@@ -1124,6 +1151,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &698907639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 698907636}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1bf0a423f9e824893bbec23fc68e0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 1662651442}
 --- !u!1 &700256799
 GameObject:
   m_ObjectHideFlags: 0
@@ -1159,7 +1199,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -35}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 900, y: 84}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &700256801
@@ -1269,6 +1309,7 @@ GameObject:
   m_Component:
   - component: {fileID: 782175153}
   - component: {fileID: 782175152}
+  - component: {fileID: 782175154}
   m_Layer: 0
   m_Name: Hole 5
   m_TagString: Untagged
@@ -1343,6 +1384,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &782175154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 782175151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1bf0a423f9e824893bbec23fc68e0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 0}
 --- !u!1 &800789157
 GameObject:
   m_ObjectHideFlags: 0
@@ -1572,7 +1626,6 @@ GameObject:
   m_Component:
   - component: {fileID: 981359332}
   - component: {fileID: 981359331}
-  - component: {fileID: 981359333}
   m_Layer: 0
   m_Name: Hammer
   m_TagString: Untagged
@@ -1647,21 +1700,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &981359333
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 981359330}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b90284959bb2d143a387a63bbfff6b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cursorOffsetX: 0.8
-  cursorOffsetY: -0.1
-  cursorPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &992008948
 GameObject:
   m_ObjectHideFlags: 0
@@ -1672,6 +1710,7 @@ GameObject:
   m_Component:
   - component: {fileID: 992008950}
   - component: {fileID: 992008949}
+  - component: {fileID: 992008951}
   m_Layer: 0
   m_Name: Hole 1
   m_TagString: Untagged
@@ -1746,6 +1785,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &992008951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 992008948}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1bf0a423f9e824893bbec23fc68e0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 1701921763}
 --- !u!1 &1017099426
 GameObject:
   m_ObjectHideFlags: 0
@@ -1756,6 +1808,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1017099428}
   - component: {fileID: 1017099427}
+  - component: {fileID: 1017099429}
   m_Layer: 0
   m_Name: Hole 3
   m_TagString: Untagged
@@ -1830,6 +1883,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1017099429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1017099426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1bf0a423f9e824893bbec23fc68e0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 48655932}
 --- !u!1 &1031241792
 GameObject:
   m_ObjectHideFlags: 0
@@ -1865,7 +1931,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 100, y: -72}
+  m_AnchoredPosition: {x: 100, y: 0}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1031241794
@@ -1975,7 +2041,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1044751025}
   - component: {fileID: 1044751026}
-  - component: {fileID: 1044751028}
+  - component: {fileID: 1044751027}
   m_Layer: 0
   m_Name: Bomb
   m_TagString: Untagged
@@ -2050,7 +2116,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1044751028
+--- !u!114 &1044751027
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2059,22 +2125,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1044751024}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 258af8368b15889488cc5ce8eae7d581, type: 3}
+  m_Script: {fileID: 11500000, guid: 17bff3423450ac44ba862315adce0d12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeUntilActivationConst: 1
-  damaged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_CallsDirty: 1
-  timeUntilDeactivationConst: 0
-  timeUntilActivation: 0
-  timeUntilDeactivation: 0
-  animator: {fileID: 0}
+  timeUntilActivationConst: 0
   isActive: 0
-  isFirstActive: 0
-  isDamaged: 0
-  canDamaged: 0
 --- !u!1 &1052865001
 GameObject:
   m_ObjectHideFlags: 0
@@ -2085,6 +2140,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1052865003}
   - component: {fileID: 1052865002}
+  - component: {fileID: 1052865004}
   m_Layer: 0
   m_Name: Hole 4
   m_TagString: Untagged
@@ -2159,6 +2215,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1052865004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1052865001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1bf0a423f9e824893bbec23fc68e0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 1044751027}
 --- !u!1 &1056040276
 GameObject:
   m_ObjectHideFlags: 0
@@ -2206,6 +2275,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1141026562}
   - component: {fileID: 1141026561}
+  - component: {fileID: 1141026563}
   m_Layer: 0
   m_Name: Hole 6
   m_TagString: Untagged
@@ -2280,6 +2350,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1141026563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141026560}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1bf0a423f9e824893bbec23fc68e0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 2011348644}
 --- !u!1 &1172891293
 GameObject:
   m_ObjectHideFlags: 0
@@ -2290,6 +2373,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1172891295}
   - component: {fileID: 1172891294}
+  - component: {fileID: 1172891296}
   m_Layer: 0
   m_Name: Hole 7
   m_TagString: Untagged
@@ -2364,6 +2448,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1172891296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1172891293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1bf0a423f9e824893bbec23fc68e0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 0}
 --- !u!1 &1277151397
 GameObject:
   m_ObjectHideFlags: 0
@@ -2399,7 +2496,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -113}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1277151399
@@ -2536,7 +2633,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 201, y: -27}
+  m_AnchoredPosition: {x: 201, y: 0}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1358496062
@@ -2671,7 +2768,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1662651441}
   - component: {fileID: 1662651440}
-  - component: {fileID: 1662651438}
+  - component: {fileID: 1662651442}
   m_Layer: 0
   m_Name: Mole 5
   m_TagString: Untagged
@@ -2679,31 +2776,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1662651438
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1662651437}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b41ce0477cab9cb4ba4e7a0aa7cbc45e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeUntilActivationConst: 3
-  damaged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_CallsDirty: 1
-  timeUntilDeactivationConst: 0
-  timeUntilActivation: 0
-  timeUntilDeactivation: 0
-  animator: {fileID: 0}
-  isActive: 0
-  isFirstActive: 0
-  isDamaged: 0
-  canDamaged: 0
 --- !u!212 &1662651440
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2771,6 +2843,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1662651442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662651437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0211dd95ec91187419f0bc9c23bf7336, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeUntilActivationConst: 0
+  isActive: 0
 --- !u!1 &1685580123
 GameObject:
   m_ObjectHideFlags: 0
@@ -2865,7 +2951,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1701921761}
   - component: {fileID: 1701921762}
-  - component: {fileID: 1701921764}
+  - component: {fileID: 1701921763}
   m_Layer: 0
   m_Name: Mole 1
   m_TagString: Untagged
@@ -2940,7 +3026,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1701921764
+--- !u!114 &1701921763
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2949,22 +3035,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1701921760}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b41ce0477cab9cb4ba4e7a0aa7cbc45e, type: 3}
+  m_Script: {fileID: 11500000, guid: 0211dd95ec91187419f0bc9c23bf7336, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeUntilActivationConst: 1
-  damaged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_CallsDirty: 1
-  timeUntilDeactivationConst: 0
-  timeUntilActivation: 0
-  timeUntilDeactivation: 0
-  animator: {fileID: 0}
+  timeUntilActivationConst: 0
   isActive: 0
-  isFirstActive: 0
-  isDamaged: 0
-  canDamaged: 0
 --- !u!1 &1832661962
 GameObject:
   m_ObjectHideFlags: 0
@@ -2975,7 +3050,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1832661963}
   - component: {fileID: 1832661964}
-  - component: {fileID: 1832661966}
+  - component: {fileID: 1832661965}
   m_Layer: 0
   m_Name: Mole 2
   m_TagString: Untagged
@@ -3050,7 +3125,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1832661966
+--- !u!114 &1832661965
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3059,22 +3134,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1832661962}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b41ce0477cab9cb4ba4e7a0aa7cbc45e, type: 3}
+  m_Script: {fileID: 11500000, guid: 0211dd95ec91187419f0bc9c23bf7336, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   timeUntilActivationConst: 0
-  damaged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_CallsDirty: 1
-  timeUntilDeactivationConst: 0
-  timeUntilActivation: 0
-  timeUntilDeactivation: 0
-  animator: {fileID: 0}
   isActive: 0
-  isFirstActive: 0
-  isDamaged: 0
-  canDamaged: 0
 --- !u!1 &1840539294
 GameObject:
   m_ObjectHideFlags: 0
@@ -3085,6 +3149,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1840539296}
   - component: {fileID: 1840539295}
+  - component: {fileID: 1840539297}
   m_Layer: 0
   m_Name: Hole 2
   m_TagString: Untagged
@@ -3159,6 +3224,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1840539297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840539294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd1bf0a423f9e824893bbec23fc68e0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy: {fileID: 1832661965}
 --- !u!1 &1863303521
 GameObject:
   m_ObjectHideFlags: 0
@@ -3329,7 +3407,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2011348643}
   - component: {fileID: 2011348642}
-  - component: {fileID: 2011348640}
+  - component: {fileID: 2011348644}
   m_Layer: 0
   m_Name: Mole 4
   m_TagString: Untagged
@@ -3337,31 +3415,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2011348640
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2011348639}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b41ce0477cab9cb4ba4e7a0aa7cbc45e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeUntilActivationConst: 2
-  damaged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_CallsDirty: 1
-  timeUntilDeactivationConst: 0
-  timeUntilActivation: 0
-  timeUntilDeactivation: 0
-  animator: {fileID: 0}
-  isActive: 0
-  isFirstActive: 0
-  isDamaged: 0
-  canDamaged: 0
 --- !u!212 &2011348642
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3429,3 +3482,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2011348644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2011348639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0211dd95ec91187419f0bc9c23bf7336, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeUntilActivationConst: 0
+  isActive: 0

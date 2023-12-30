@@ -10,10 +10,14 @@ public abstract class Enemy : MonoBehaviour
     private float timeUntilDeactivation;
     private bool isActive;
     private bool isFirstActive;
+    private bool isDamaged;
+    private bool canDamaged;
 
     protected Animator animator;
 
     public bool IsFirstActive => isFirstActive;
+
+    public bool IsDamaged => isDamaged;
 
     protected abstract void StartAppearenceAnimation();
 
@@ -24,8 +28,10 @@ public abstract class Enemy : MonoBehaviour
     public void ResetFirstActive()
     {
         isFirstActive = true;
+        isDamaged = false;
         timeUntilActivation = timeUntilActivationConst;
         timeUntilDeactivation = timeUntilDeactivationConst;
+        canDamaged = true;
     }
 
     public void Deactivate()
@@ -34,19 +40,25 @@ public abstract class Enemy : MonoBehaviour
         isActive = false;
     }
 
+    public void CantDamage()
+    {
+        canDamaged = false;
+    }
+
     protected virtual void Start()
     {
         timeUntilDeactivationConst = 5f;
         animator = GetComponent<Animator>();
         isActive = false;
         isFirstActive = true;
+        canDamaged = true;
         timeUntilActivation = timeUntilActivationConst;
         timeUntilDeactivation = timeUntilDeactivationConst;
     }
 
     protected virtual void Update()
     {
-        if (isFirstActive)
+        if (isFirstActive && !isDamaged)
         {
             if (!isActive)
             {
@@ -65,6 +77,16 @@ public abstract class Enemy : MonoBehaviour
                     StartDisappearenceAnimation();
                 }
             }
+        }
+    }
+
+    private void OnMouseDown()
+    {
+        if (!isDamaged && isActive && canDamaged)
+        {
+
+            isDamaged = true;
+            StartDamagedAnimation();
         }
     }
 }

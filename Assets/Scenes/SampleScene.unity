@@ -222,7 +222,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeUntilActivationConst: 0
-  isActive: 0
 --- !u!95 &48655933
 Animator:
   serializedVersion: 5
@@ -1648,6 +1647,7 @@ GameObject:
   m_Component:
   - component: {fileID: 981359332}
   - component: {fileID: 981359331}
+  - component: {fileID: 981359333}
   m_Layer: 0
   m_Name: Hammer
   m_TagString: Untagged
@@ -1722,6 +1722,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &981359333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981359330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da761a917d66b4748b9b4e418d03d810, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cursorOffsetX: 0.8
+  cursorOffsetY: -1
 --- !u!1 &992008948
 GameObject:
   m_ObjectHideFlags: 0
@@ -2152,7 +2166,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeUntilActivationConst: 0
-  isActive: 0
 --- !u!95 &1044751028
 Animator:
   serializedVersion: 5
@@ -2900,8 +2913,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0211dd95ec91187419f0bc9c23bf7336, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeUntilActivationConst: 0
-  isActive: 0
+  timeUntilActivationConst: 3
 --- !u!95 &1662651443
 Animator:
   serializedVersion: 5
@@ -3105,8 +3117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0211dd95ec91187419f0bc9c23bf7336, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeUntilActivationConst: 0
-  isActive: 0
+  timeUntilActivationConst: 1
 --- !u!95 &1701921764
 Animator:
   serializedVersion: 5
@@ -3227,7 +3238,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeUntilActivationConst: 0
-  isActive: 0
 --- !u!95 &1832661966
 Animator:
   serializedVersion: 5
@@ -3605,8 +3615,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0211dd95ec91187419f0bc9c23bf7336, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeUntilActivationConst: 0
-  isActive: 0
+  timeUntilActivationConst: 2
 --- !u!95 &2011348645
 Animator:
   serializedVersion: 5

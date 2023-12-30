@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 48655930}
   - component: {fileID: 48655931}
   - component: {fileID: 48655932}
+  - component: {fileID: 48655933}
   m_Layer: 0
   m_Name: Mole 3
   m_TagString: Untagged
@@ -222,6 +223,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeUntilActivationConst: 0
   isActive: 0
+--- !u!95 &48655933
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 48655929}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 95451c45c5d139e4a8f70d2114b3c5c3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &91635493
 GameObject:
   m_ObjectHideFlags: 0
@@ -2042,6 +2064,7 @@ GameObject:
   - component: {fileID: 1044751025}
   - component: {fileID: 1044751026}
   - component: {fileID: 1044751027}
+  - component: {fileID: 1044751028}
   m_Layer: 0
   m_Name: Bomb
   m_TagString: Untagged
@@ -2130,6 +2153,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeUntilActivationConst: 0
   isActive: 0
+--- !u!95 &1044751028
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044751024}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e542bbfa9cd20a54f9ce6088aed19edd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1052865001
 GameObject:
   m_ObjectHideFlags: 0
@@ -2769,6 +2813,7 @@ GameObject:
   - component: {fileID: 1662651441}
   - component: {fileID: 1662651440}
   - component: {fileID: 1662651442}
+  - component: {fileID: 1662651443}
   m_Layer: 0
   m_Name: Mole 5
   m_TagString: Untagged
@@ -2857,6 +2902,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeUntilActivationConst: 0
   isActive: 0
+--- !u!95 &1662651443
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662651437}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 95451c45c5d139e4a8f70d2114b3c5c3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1685580123
 GameObject:
   m_ObjectHideFlags: 0
@@ -2952,6 +3018,7 @@ GameObject:
   - component: {fileID: 1701921761}
   - component: {fileID: 1701921762}
   - component: {fileID: 1701921763}
+  - component: {fileID: 1701921764}
   m_Layer: 0
   m_Name: Mole 1
   m_TagString: Untagged
@@ -3040,6 +3107,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeUntilActivationConst: 0
   isActive: 0
+--- !u!95 &1701921764
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1701921760}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 95451c45c5d139e4a8f70d2114b3c5c3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1832661962
 GameObject:
   m_ObjectHideFlags: 0
@@ -3051,6 +3139,7 @@ GameObject:
   - component: {fileID: 1832661963}
   - component: {fileID: 1832661964}
   - component: {fileID: 1832661965}
+  - component: {fileID: 1832661966}
   m_Layer: 0
   m_Name: Mole 2
   m_TagString: Untagged
@@ -3139,6 +3228,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeUntilActivationConst: 0
   isActive: 0
+--- !u!95 &1832661966
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1832661962}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 95451c45c5d139e4a8f70d2114b3c5c3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1840539294
 GameObject:
   m_ObjectHideFlags: 0
@@ -3408,6 +3518,7 @@ GameObject:
   - component: {fileID: 2011348643}
   - component: {fileID: 2011348642}
   - component: {fileID: 2011348644}
+  - component: {fileID: 2011348645}
   m_Layer: 0
   m_Name: Mole 4
   m_TagString: Untagged
@@ -3496,3 +3607,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   timeUntilActivationConst: 0
   isActive: 0
+--- !u!95 &2011348645
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2011348639}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 95451c45c5d139e4a8f70d2114b3c5c3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

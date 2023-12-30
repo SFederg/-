@@ -8,8 +8,7 @@ public class Hole : MonoBehaviour
     {
         this.enemy = enemy;
         enemy.gameObject.transform.position = new Vector3(transform.position.x, transform.position.y, enemy.transform.position.z);
-        enemy.isActive = true;
-        enemy.gameObject.SetActive(true);
+        enemy.ResetFirstActive();
     }
 
     public Enemy PopEnemy()

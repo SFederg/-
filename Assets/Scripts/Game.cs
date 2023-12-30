@@ -16,7 +16,7 @@ public class Game : MonoBehaviour
         {
             if (holes[i].enemy != null)
             {
-                if (!holes[i].enemy.isActive)
+                if (!holes[i].enemy.IsFirstActive)
                 {
                     int holeNumber = random.Next(holes.Length);
                     if (holes[holeNumber].enemy == null)

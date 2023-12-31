@@ -50,7 +50,13 @@ public abstract class Enemy : MonoBehaviour
 
     protected virtual void Start()
     {
-        timeUntilDeactivationConst = 5f;
+        if (DifficultyLevel.number == 0)
+            timeUntilDeactivationConst = 5f;
+        else if (DifficultyLevel.number == 1)
+            timeUntilDeactivationConst = 3f;
+        else if (DifficultyLevel.number == 2)
+            timeUntilDeactivationConst = 2f;
+
         animator = GetComponent<Animator>();
         isActive = false;
         isFirstActive = true;

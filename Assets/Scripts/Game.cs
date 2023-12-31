@@ -41,9 +41,14 @@ public class Game : MonoBehaviour
         mainMenuButton.gameObject.SetActive(true);
         restartLevelButton.gameObject.SetActive(true);
 
-        restartLevelButton.onClick.AddListener(delegate ()
+        mainMenuButton.onClick.AddListener(delegate ()
         {
             SceneManager.LoadScene(0);
+        });
+
+        restartLevelButton.onClick.AddListener(delegate ()
+        {
+            SceneManager.LoadScene(1);
         });
     }
 

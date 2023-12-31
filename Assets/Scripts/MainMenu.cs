@@ -14,6 +14,8 @@ public class MainMenu : MonoBehaviour
 
     private void Start()
     {
+        dropdown.value = DifficultyLevel.number;
+
         playButton.onClick.AddListener(delegate ()
         {
             SceneManager.LoadScene(1);
@@ -43,6 +45,11 @@ public class MainMenu : MonoBehaviour
         quitButton.onClick.AddListener(delegate ()
         {
             Application.Quit();
+        });
+
+        dropdown.onValueChanged.AddListener(delegate (int value)
+        {
+            DifficultyLevel.number = value;
         });
     }
 }

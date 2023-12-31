@@ -13,6 +13,7 @@ public class Game : MonoBehaviour
     [SerializeField] private Button restartLevelButton;
 
     private Hammer hummer;
+    private Timer timer;
     private int score;
     private System.Random random;
 
@@ -24,8 +25,10 @@ public class Game : MonoBehaviour
 
     public void FinishLevel()
     {
+        timer.StopTimer();
         Cursor.visible = true;
         hummer.gameObject.SetActive(false);
+        timer.gameObject.SetActive(false);
         scoreText.gameObject.SetActive(false);
 
         for (int i = 0; i < holes.Length; i++)
@@ -47,6 +50,7 @@ public class Game : MonoBehaviour
     private void Start()
     {
         hummer = FindFirstObjectByType<Hammer>();
+        timer = FindFirstObjectByType<Timer>();
         score = 0;
         scoreText.text = "—чет: " + score;
         random = new System.Random();
@@ -67,6 +71,9 @@ public class Game : MonoBehaviour
                 }
             }
         }
+
+        timer.finished.AddListener(FinishLevel);
+        timer.StartTimer();
     }
 
     private void FixedUpdate()

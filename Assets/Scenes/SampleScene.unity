@@ -223,6 +223,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeUntilActivationConst: 0
+  damaged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!95 &48655933
 Animator:
   serializedVersion: 5
@@ -1065,6 +1068,7 @@ MonoBehaviour:
   - {fileID: 1172891296}
   - {fileID: 205750711}
   - {fileID: 698907639}
+  scoreText: {fileID: 1031241794}
 --- !u!1 &638749000
 GameObject:
   m_ObjectHideFlags: 0
@@ -2013,7 +2017,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 100, y: 0}
+  m_AnchoredPosition: {x: 100, y: -65}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1031241794
@@ -2213,6 +2217,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeUntilActivationConst: 0
+  damaged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!95 &1044751028
 Animator:
   serializedVersion: 5
@@ -2782,7 +2789,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 201, y: 0}
+  m_AnchoredPosition: {x: 195, y: -25}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1358496062
@@ -3007,6 +3014,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeUntilActivationConst: 3
+  damaged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!95 &1662651443
 Animator:
   serializedVersion: 5
@@ -3257,6 +3267,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeUntilActivationConst: 1
+  damaged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!95 &1701921764
 Animator:
   serializedVersion: 5
@@ -3423,6 +3436,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeUntilActivationConst: 0
+  damaged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!95 &1832661966
 Animator:
   serializedVersion: 5
@@ -3847,6 +3863,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeUntilActivationConst: 2
+  damaged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!95 &2011348645
 Animator:
   serializedVersion: 5

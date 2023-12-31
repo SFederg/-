@@ -1,9 +1,11 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 [RequireComponent(typeof(Animator))]
 public abstract class Enemy : MonoBehaviour
 {
     [SerializeField] private float timeUntilActivationConst;
+    [HideInInspector] public UnityEvent damaged = new UnityEvent();
 
     private float timeUntilDeactivationConst;
     private float timeUntilActivation;
@@ -38,6 +40,7 @@ public abstract class Enemy : MonoBehaviour
     {
         isFirstActive = false;
         isActive = false;
+        canDamaged = true;
     }
 
     public void CantDamage()
@@ -84,8 +87,8 @@ public abstract class Enemy : MonoBehaviour
     {
         if (!isDamaged && isActive && canDamaged)
         {
-
             isDamaged = true;
+            damaged?.Invoke();
             StartDamagedAnimation();
         }
     }

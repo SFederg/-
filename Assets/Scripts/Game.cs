@@ -1,11 +1,18 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Game : MonoBehaviour
 {
     [SerializeField] private Hole[] holes;
     [SerializeField] private TextMeshProUGUI scoreText;
+    [SerializeField] private TextMeshProUGUI finishHeader;
+    [SerializeField] private TextMeshProUGUI mainScoreText;
+    [SerializeField] private Button mainMenuButton;
+    [SerializeField] private Button restartLevelButton;
 
+    private Hammer hummer;
     private int score;
     private System.Random random;
 
@@ -15,8 +22,31 @@ public class Game : MonoBehaviour
         scoreText.text = "—чет: " + score;
     }
 
+    public void FinishLevel()
+    {
+        Cursor.visible = true;
+        hummer.gameObject.SetActive(false);
+        scoreText.gameObject.SetActive(false);
+
+        for (int i = 0; i < holes.Length; i++)
+            if (holes[i].enemy != null)
+                holes[i].enemy.gameObject.SetActive(false);
+
+        finishHeader.gameObject.SetActive(true);
+        mainScoreText.gameObject.SetActive(true);
+        mainScoreText.text = "—чет: " + score;
+        mainMenuButton.gameObject.SetActive(true);
+        restartLevelButton.gameObject.SetActive(true);
+
+        restartLevelButton.onClick.AddListener(delegate ()
+        {
+            SceneManager.LoadScene(0);
+        });
+    }
+
     private void Start()
     {
+        hummer = FindFirstObjectByType<Hammer>();
         score = 0;
         scoreText.text = "—чет: " + score;
         random = new System.Random();
@@ -30,6 +60,10 @@ public class Game : MonoBehaviour
                 if (enemy as Mole)
                 {
                     enemy.damaged.AddListener(AddScore);
+                }
+                else if (enemy as Bomb)
+                {
+                    enemy.damaged.AddListener(FinishLevel);
                 }
             }
         }
